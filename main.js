@@ -1,4 +1,4 @@
-let APP_ID = "64ac66f753824337b72769812760925b";
+let APP_ID = "APP_ID";
 
 
 
