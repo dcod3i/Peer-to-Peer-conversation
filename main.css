@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#videos{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-player{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#user-2{
+    display: none;
+}
+
+.smallFrame{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 170px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #b366f9;
+    -webkit-box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
+    box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
+    z-index: 999;
+}
+
+#controls{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1;
+}
+
+.control-container{
+    background-color: rgb(179, 102, 249, .9);
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.control-container img{
+    height: 30px;
+    width: 30px;
+}
+
+#leave-btn{
+    background-color: rgb(255, 80, 80, 1);
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .smallFrame {
+        height: 80px;
+        width: 120px;
+    }
+
+    .control-container img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/* For iPhone 6/7/8, iPhone SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Adjust styles for iPhone 6/7/8, iPhone SE */
+}
+
+/* For iPhone X/XS/11 Pro */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    /* Adjust styles for iPhone X/XS/11 Pro */
+}
+
+/* For iPhone XR/11 */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Adjust styles for iPhone XR/11 */
+}
+
+/* For iPhone XS Max/11 Pro Max */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) {
+    /* Adjust styles for iPhone XS Max/11 Pro Max */
+}
+
+/* For Android devices */
+@media only screen and (max-device-width: 480px) {
+    /* Adjust styles for typical Android devices */
+}
+
+/* For Pixel and Samsung Note series */
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+    /* Adjust styles for Pixel and Samsung Note series */
+    .smallFrame {
+        height: 90px; /* Example height */
+        width: 140px; /* Example width */
+    }
+
+    .control-container img {
+        height: 25px; /* Example height */
+        width: 25px; /* Example width */
+    }
+}
+
+/* For larger screens */
+@media only screen and (min-width: 601px) {
+    /* Add styles for larger screens here */
+}
